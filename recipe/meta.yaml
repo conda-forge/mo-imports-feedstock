@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=2.7
   run:
-    - mo-future 3.130.20302
+    - mo-future .147.20327
     - python >=2.7
 
 test:
