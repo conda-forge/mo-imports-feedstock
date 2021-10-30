@@ -1,5 +1,5 @@
 {% set name = "mo-imports" %}
-{% set version = "5.17.21182" %}
+{% set version = "6.2.21303" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mo-imports-{{ version }}.tar.gz
-  sha256: c2003a03c3bd9c7cebf05620b42b95b063964665ef72b922f5e105c574114142
+  sha256: dc7fd977b7802a484fa78e6946933b805ce627c265b461c8340672db5fcdce46
 
 build:
   number: 0
