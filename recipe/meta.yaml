@@ -1,5 +1,5 @@
 {% set name = "mo-imports" %}
-{% set version = "7.584.24095" %}
+{% set version = "7.671.25036" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mo-imports-{{ version }}.tar.gz
-  sha256: 84c5c146a408aae8ac3976868cdb84d2906c1b671d2297c2c32dd3b0d28f2fdb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 599f68f0402d2e298520f24ee0fff6511dc15259e742ac236f67a5ae8db2883b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - mo-future ==7.584.24095
+    - mo-future ==7.671.25036
     - python >={{ python_min }}
 
 test:
